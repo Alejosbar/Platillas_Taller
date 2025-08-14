@@ -1,0 +1,75 @@
+/* Animación de entrada para el contenido */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Estilos para el carrusel para controlar la altura de la imagen */
+.carousel-item img {
+    max-height: 85vh; /* Limita la altura al 85% de la ventana */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    filter: brightness(0.8); /* Oscurece ligeramente las imágenes para que el texto resalte */
+}
+
+.carousel-caption h5 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Efecto de hover para las tarjetas de películas */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-color: #dc3545 !important; /* Asegura que el borde sea siempre rojo */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(220, 53, 69, 0.3) !important; /* Sombra roja sutil */
+}
+
+/* Animación para botones */
+.btn {
+    transition: transform 0.2s ease;
+}
+
+/* --- Dark Mode Styles --- */
+[data-bs-theme="dark"] .bg-light {
+    background-color: #212529 !important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #dc3545 !important;
+}
+
+[data-bs-theme="dark"] .card:hover {
+    box-shadow: 0 8px 25px rgba(220, 53, 69, 0.5) !important;
+}
+
+[data-bs-theme="dark"] .list-group-item {
+    background-color: #495057;
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+
+[data-bs-theme="dark"] .list-group-item.active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+[data-bs-theme="dark"] .accordion-button {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .accordion-body {
+    background-color: #212529;
+}
+
+[data-bs-theme="dark"] .breadcrumb-item a {
+    color: #dc3545;
+}

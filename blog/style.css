@@ -1,0 +1,86 @@
+/* Animación de entrada */
+body {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos del carrusel */
+.carousel-item img {
+    max-height: 50vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Efecto de hover para la tarjeta principal del blog */
+.card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Mejoras en la tabla */
+.table-hover tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,0.075);
+}
+
+/* Sombra para el acordeón en el sidebar */
+.accordion {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: .375rem; /* Bootstrap's default radius */
+}
+
+/* --- Dark Mode Styles --- */
+[data-bs-theme="dark"] body {
+    background-color: #212529;
+    color: #dee2e6;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #343a40;
+    border-color: #6c757d !important;
+}
+
+[data-bs-theme="dark"] .table {
+    --bs-table-bg: #343a40;
+    --bs-table-border-color: #495057;
+    --bs-table-color: #dee2e6;
+    --bs-table-hover-bg: #495057;
+}
+
+[data-bs-theme="dark"] .accordion-button {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .accordion-body {
+    background-color: #2b3035;
+}
+
+[data-bs-theme="dark"] .list-group-item {
+    background-color: transparent;
+    color: #dee2e6;
+    border-color: #495057;
+}
+
+[data-bs-theme="dark"] .list-group-item.active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: #343a40 !important;
+}

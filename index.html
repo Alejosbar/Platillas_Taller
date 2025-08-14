@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Terror</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0 z-index-master">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portafolio de Terror</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog/index.html"><i class="bi bi-house-door me-1"></i> Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact/index.html"><i class="bi bi-house-door me-1"></i> Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ecommerce/index.html"><i class="bi bi-house-door me-1"></i> Ecomemerce</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../landing-page/index.html"><i class="bi bi-briefcase-fill me-1"></i> Landing-page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../portfolio/index.html"><i class="bi bi-person-lines-fill me-1"></i> Portfolio</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button class="btn btn-outline-secondary" id="theme-toggle" title="Toggle theme">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/the_shining.webp" class="d-block w-100" alt="El Resplandor">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>El Resplandor</h5>
+                    <i class="bi bi-nvme-fill"></i>
+                    <p>Una familia se dirige a un hotel aislado durante el invierno, donde una presencia siniestra influye en el padre hacia la violencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar proyectos..." data-bs-toggle="tooltip" data-bs-placement="top" title="Busca por título o autor">
+                        <button class="btn btn-outline-danger" type="button">
+                            <i class="bi bi-search"></i>
+                            Buscando...
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="btn-group w-100" role="group" aria-label="Filtros de proyectos">
+                        <button type="button" class="btn btn-dark">Todos</button>
+                        <button type="button" class="btn btn-outline-dark">Libros</button>
+                        <button type="button" class="btn btn-outline-dark">Películas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <figure class="figure">
+                        <img src="../img/dracula.jpg" class="figure-img img-fluid rounded shadow-lg" alt="Drácula">
+                        <figcaption class="figure-caption text-end">Portada de la novela Drácula.</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-8 col-md-6 mb-4">
+                    <h5 class="text-center text-lg-start">
+                        Drácula <button type="button" class="btn btn-sm btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Publicado en 1897 por Bram Stoker."><i class="bi bi-info-circle"></i> Detalles</button>
+                    </h5>
+                    <p class="text-muted">La historia de un vampiro que se muda de Transilvania a Inglaterra para encontrar sangre nueva.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="projectRadio" id="radioDracula" checked>
+                        <label class="form-check-label" for="radioDracula">
+                            Ver detalles
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mis Habilidades Espectrales</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item d-flex justify-content-between align-items-center"><i class="bi bi-book me-2"></i>Diseño de Portadas de Libros<span class="badge bg-danger rounded-pill">90%</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"><i class="bi bi-camera-reels me-2"></i>Edición de Video de Terror<span class="badge bg-danger rounded-pill">80%</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"><i class="bi bi-pencil-square me-2"></i>Escritura Creativa<span class="badge bg-danger rounded-pill">95%</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <label for="web-design"><i class="bi bi-display me-1"></i> Diseño Web Aterrador</label>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <label for="seo"><i class="bi bi-graph-up-arrow me-1"></i> Invocación de SEO</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-question-square-fill me-2"></i> ¿En qué tipo de proyectos trabajas?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body d-flex justify-content-between align-items-center">
+                            Me especializo en diseño y desarrollo web con temática de terror.
+                            <span class="d-none d-lg-block badge bg-primary">Nuevo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto"><i class="bi bi-bell-fill me-2"></i>Notificación</strong>
+                <small>Ahora mismo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                ¡Nuevo proyecto añadido al portafolio!
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0"><i class="bi bi-c-circle me-1"></i> 2025 Portafolio de Terror. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
